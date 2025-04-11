@@ -1,0 +1,26 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    /* Visit https://aka.ms/tsconfig to read more about this file */
+
+    /* Language and Environment */
+    "target": "ES2016", // Or a newer version like ES2020, ES2022 depending on your Node version support
+    "lib": ["ESNext"], // Include modern ES features; remove "DOM" if not needed
+
+    /* Modules */
+    "module": "CommonJS", // Standard module system for Node.js
+    "rootDir": "./src", // Where your TypeScript source files are
+    "resolveJsonModule": true, // Allows importing .json files
+
+    /* Emit */
+    "outDir": "./dist", // Where compiled JavaScript files will go
+    "esModuleInterop": true, // Enables compatibility between CommonJS and ES Modules
+    "forceConsistentCasingInFileNames": true, // Prevent OS-dependent casing issues
+
+    /* Type Checking */
+    "strict": true, // Enable all strict type-checking options (recommended)
+    "skipLibCheck": true // Skip type checking of declaration files (speeds up compilation)
+  },
+  "include": ["src/**/*"], // Which files TypeScript should compile
+  "exclude": ["node_modules", "**/*.spec.ts"] // Which files/folders to ignore
+}
